@@ -127,6 +127,7 @@ test.describe.serial('TEST SUITE', async () => {
       test('Without-fixtures 2', async () => {
         test.setTimeout(60000);
         const browser=await chromium.launch();
+        
         const context=await browser.newContext();
         
         const page1=await context.newPage();
