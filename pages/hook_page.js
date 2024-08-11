@@ -9,4 +9,7 @@ exports.hookPage=class hookPage{
     async product_one_link(){
         await this.page.locator("//body[1]/section[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[1]/a[1]").click();
     }
+    async navigate_url(){
+        await this.page.goto('https://automationexercise.com/');
+    }
 }

@@ -9,6 +9,14 @@ test('Login with valid credentials',async({loginObj}) => {
         await loginObj.click_login_button();
         await delay(3000);
 });
+test('Login with valid credentials 2',async({hookObj}) => {
+
+        await hookObj.navigate_url();
+        await hookObj.click_product_link();
+        await hookObj.product_one_link();
+        await delay(3000);
+
+});
 
     
 
